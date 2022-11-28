@@ -59,7 +59,7 @@ const Taskbar = () => {
           alt=""
         />
 
-        <div className="rightSideMenu w-44 px-4 h-full flex justify-between absolute right-0">
+        <div className="rightSideMenu w-48 px-4 h-full flex justify-between absolute right-0">
           {showWifiBtMenu && <WifiBluetoothMenu />}
           <div
             className="icons space-x-2 flex h-full items-center text-xl px-3 rounded hover:bg-[#ffffff28]"
