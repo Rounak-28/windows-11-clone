@@ -21,7 +21,7 @@ const Taskbar = () => {
   return (
     <>
       {showMenu && <Menu />}
-      <div className="w-screen backdrop-blur-md h-10 absolute bottom-0 flex justify-center items-center space-x-5">
+      <div className="w-screen overflow-hidden backdrop-blur-md h-10 absolute bottom-0 flex justify-center items-center space-x-5">
         <img
           src="/icons/w11.svg"
           className="w-10 h-10 p-2 rounded-sm cursor-pointer hover:bg-[#ffffff28]"
