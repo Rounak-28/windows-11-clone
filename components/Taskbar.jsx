@@ -4,9 +4,10 @@ import Menu from "./Menu";
 import { useState } from "react";
 import WifiBluetoothMenu from "./WifiBluetoothMenu";
 
-const Taskbar = () => {
+const Taskbar = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showWifiBtMenu, setShowWifiBtMenu] = useState(false);
+
 
   const showMenuFunc = () => {
     setShowWifiBtMenu(false);
@@ -17,6 +18,7 @@ const Taskbar = () => {
     setShowMenu(false);
     showWifiBtMenu ? setShowWifiBtMenu(false) : setShowWifiBtMenu(true);
   };
+
 
   return (
     <>
@@ -43,6 +45,7 @@ const Taskbar = () => {
           src="/icons/google-chrome.svg"
           className="w-10 h-10 p-2 rounded-sm cursor-pointer hover:bg-[#ffffff28]"
           alt=""
+          onClick={props.openChrome}
         />
         <img
           src="/icons/visualstudiocode.svg"
