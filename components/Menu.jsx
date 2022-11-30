@@ -40,63 +40,63 @@ const Menu = () => {
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/microsoft-edge.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/word.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/excel.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/powerpoint.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/mail.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/calendar.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/settings.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/office.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/onenote.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/calculator.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/clock.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/notepad.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/paint.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/file-manager.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/icons/visualstudiocode.svg" className="w-10" alt="" />
+            <img src="/icons/films.svg" className="w-10" alt="" />
             <p>VS Code</p>
           </div>
           <div className="flex flex-col items-center">
