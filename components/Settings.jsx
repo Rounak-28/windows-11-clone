@@ -45,41 +45,41 @@ const Settings = (props) => {
                 <AiOutlineSearch className="absolute right-2 top-2" />
                 <div className="line w-full h-[1px] bg-[#ffffff60]"></div>
               </div>
-              <div className="list mx-2 h-custom w-full space-y-1">
+              <div className="list mx-2 h-custom w-full space-y-1 overflow-hidden">
                 <div></div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>System</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Bluetooth & devices</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Netword & internet</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Personalization</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Apps</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Accounts</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Time & Language</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Gaming</p>
                 </div>
-                <div className="item w-full h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
+                <div className="item w-full min-h-[39px] h-[10%] px-2 hover:bg-[#ffffff12] text-sm rounded flex items-center space-x-4">
                     <div className="icon w-7 h-7 bg-white rounded-full"></div>
                     <p>Accessibilaty</p>
                 </div>
