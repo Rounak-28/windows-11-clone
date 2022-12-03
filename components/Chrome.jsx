@@ -3,7 +3,12 @@ import { BsArrowLeft, BsArrowRight, BsGithub } from "react-icons/bs"
 import { FaUserCircle } from "react-icons/fa"
 import { BiRectangle } from "react-icons/bi"
 
-const Chrome = () => {
+const Chrome = (props) => {
+
+    const closeChrome =()=>{
+        props.setShowChrome(false)
+    }
+
   return (
     <div className="w-screen h-screen absolute top-0 left-0 flex justify-center items-center">
         <div className="w-[80%] h-[600px] rounded-md resize overflow-auto bg-[#3b3b3b]">
@@ -16,13 +21,13 @@ const Chrome = () => {
                      />
                      <p>Google Chrome</p>
                      <div className="rightOptions flex absolute justify-center right-1 space-x-1 items-center">
-                        <div className="hover:bg-[#ffffff28] p-3">
+                        <div className="hover:bg-[#ffffff28] p-3" onClick={closeChrome}>
                             <AiOutlineMinus />
                         </div>
                         <div className="hover:bg-[#ffffff28] p-3">
                             <BiRectangle />
                         </div>
-                        <div className="hover:bg-[#ffffff28] p-3">
+                        <div className="hover:bg-[#ffffff28] p-3" onClick={closeChrome}>
                             <AiOutlineClose />
                         </div>                        
                      </div>
