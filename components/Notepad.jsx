@@ -8,7 +8,7 @@ const Notepad = (props) => {
 
   return (
     <div className="w-screen h-screen absolute top-0 left-0 flex justify-center items-center">
-      <div className="w-[80%] h-[600px] rounded-md resize overflow-auto bg-[#3b3b3b]">
+      <div className="w-[80%] h-[600px] rounded-md resize overflow-hidden bg-[#3b3b3b]">
         <div className="flex space-x-3 py-2 px-4 text-sm relative bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#1c1f2d] to-[#1f2022] h-[80px]">
           <img src="/icons/notepad.svg" className="w-5 h-5" alt="" />
           <p>Notepad</p>
