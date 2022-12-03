@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.h-custom{
+    height: calc(100% - 17% - 32px - 16px);
+}
