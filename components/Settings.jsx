@@ -5,6 +5,8 @@ import {
   AiOutlineSearch,
 } from "react-icons/ai";
 import { BiRectangle } from "react-icons/bi";
+import { FaMicrosoft } from "react-icons/fa";
+import { MdUpdate } from "react-icons/md";
 
 const Settings = (props) => {
   const closeSettings = () => {
@@ -85,7 +87,46 @@ const Settings = (props) => {
                 </div>
               </div>
             </div>
-            <div className="right w-[75%] h-full"></div>
+            <div className="right w-[75%] h-full">
+              <div className="top w-full h-[30%]">
+                <div className="h-[40%] text-2xl font-semibold flex items-center px-5">System</div>
+                <div className="h-[60%] flex pr-6">
+                  <div className=" h-full w-[40%] flex items-center px-2 space-x-4 text-sm">
+                    <div className="w-32 border-2 border-black">
+                      <img src="/bg.jpg" alt="" className="w-full" />
+                    </div>
+                    <div className="text">
+                      <p className="font-bold">Rog-G14</p>
+                      <p>Rog Zephyrus G14</p>
+                      <p className="text-[#47b4ee]">Rename</p>
+                    </div>
+                  </div>
+                  <div className="h-full w-[60%] flex justify-end px-4 py-6 space-x-2">
+                    <div className="m365 h-full w-[35%] flex space-x-2 items-center hover:bg-[#ffffff12] rounded">
+                      <FaMicrosoft className="text-2xl"/>
+                      <div className="text-xs">
+                        <p className="font-semibold">Microsoft 365</p>
+                        <p>View benefits</p>
+                      </div>
+                    </div>
+                    <div className="wsupdate h-full w-[35%] flex space-x-2 items-center hover:bg-[#ffffff12] rounded">
+                      <MdUpdate className="text-2xl"/>
+                      <div className="text-xs">
+                        <p className="font-semibold">Windows update</p>
+                        <p>Last checked: 9 minutes ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-[70%] space-y-2 pr-6 pl-2">
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
