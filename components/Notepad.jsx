@@ -1,10 +1,10 @@
 import { AiOutlineClose, AiOutlineMinus } from "react-icons/ai";
 import { BiRectangle } from "react-icons/bi";
+import store from "../zustand/store";
 
 const Notepad = (props) => {
-  const closeNotepad = () => {
-    props.setShowNotepad(false);
-  };
+  
+  const closeNotepad = store(state => state.closeNotepad);
 
   return (
     <div className="w-screen h-screen absolute top-0 left-0 flex justify-center items-center">

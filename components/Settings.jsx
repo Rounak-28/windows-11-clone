@@ -2,16 +2,19 @@ import React from "react";
 import {
   AiOutlineClose,
   AiOutlineMinus,
+  AiOutlineRight,
   AiOutlineSearch,
 } from "react-icons/ai";
 import { BiRectangle } from "react-icons/bi";
+import { BsBell, BsLaptop, BsMoon, BsPower, BsVolumeUp } from "react-icons/bs";
 import { FaMicrosoft } from "react-icons/fa";
 import { MdUpdate } from "react-icons/md";
+import store from "../zustand/store";
 
-const Settings = (props) => {
-  const closeSettings = () => {
-    props.setShowSettings(false);
-  };
+
+const Settings = () => {
+
+  const closeSettings = store(state => state.closeSettings)
 
   return (
     <div className="w-screen h-screen absolute top-0 left-0 flex justify-center items-center">
@@ -120,11 +123,46 @@ const Settings = (props) => {
                 </div>
               </div>
               <div className="w-full h-[70%] space-y-2 pr-6 pl-2">
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded"></div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                  <AiOutlineRight className="absolute right-4" />
+                  <BsLaptop className="absolute left-4" />
+                  <div className="mx-14 text-sm">
+                    <p className="font-semibold">Display</p>
+                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                  </div>
+                </div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                  <AiOutlineRight className="absolute right-4" />
+                  <BsVolumeUp className="absolute left-4" />
+                  <div className="mx-14 text-sm">
+                    <p className="font-semibold">Sound</p>
+                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                  </div>
+                </div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                  <AiOutlineRight className="absolute right-4" />
+                  <BsBell className="absolute left-4" />
+                  <div className="mx-14 text-sm">
+                    <p className="font-semibold">Notifications</p>
+                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                  </div>
+                </div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                  <AiOutlineRight className="absolute right-4" />
+                  <BsMoon className="absolute left-4" />
+                  <div className="mx-14 text-sm">
+                    <p className="font-semibold">Focus assist</p>
+                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                  </div>
+                </div>
+                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                  <AiOutlineRight className="absolute right-4" />
+                  <BsPower className="absolute left-4" />
+                  <div className="mx-14 text-sm">
+                    <p className="font-semibold">Power & battery</p>
+                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

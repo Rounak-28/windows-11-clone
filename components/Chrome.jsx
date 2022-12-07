@@ -2,12 +2,11 @@ import { AiOutlineClose, AiOutlineMinus, AiOutlineReload } from "react-icons/ai"
 import { BsArrowLeft, BsArrowRight, BsGithub } from "react-icons/bs"
 import { FaUserCircle } from "react-icons/fa"
 import { BiRectangle } from "react-icons/bi"
+import store from "../zustand/store"
 
 const Chrome = (props) => {
 
-    const closeChrome =()=>{
-        props.setShowChrome(false)
-    }
+    const closeChrome = store(state => state.closeChrome)
 
   return (
     <div className="w-screen h-screen absolute top-0 left-0 flex justify-center items-center">

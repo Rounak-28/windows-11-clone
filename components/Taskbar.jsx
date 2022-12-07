@@ -1,29 +1,26 @@
 import { BsBatteryFull, BsVolumeMute } from "react-icons/bs";
 import { AiOutlineWifi } from "react-icons/ai";
 import Menu from "./Menu";
-import { useState } from "react";
 import WifiBluetoothMenu from "./WifiBluetoothMenu";
+import store from "../zustand/store";
 
-const Taskbar = (props) => {
-  const [showMenu, setShowMenu] = useState(false);
-  const [showWifiBtMenu, setShowWifiBtMenu] = useState(false);
+const Taskbar = () => {
+
+  const showMenuFunc = store(state => state.changeMenuContext);
+  const showWifiBtMenuFunc = store(state => state.changeWifiBtMenuContext);
 
 
+  let isMenuOpened = store(state => state.menuContext)
+  let isWifiBtMenuOpened = store(state => state.wifiBMenuContext)
 
-  const showMenuFunc = () => {
-    setShowWifiBtMenu(false);
-    showMenu ? setShowMenu(false) : setShowMenu(true);
-  };
-
-  const showWifiBtMenuFunc = () => {
-    setShowMenu(false);
-    showWifiBtMenu ? setShowWifiBtMenu(false) : setShowWifiBtMenu(true);
-  };
+  let isSettingsOpened = store(state => state.settingsContext)
+  let isChromeOpened = store(state => state.chromeContext)
+  let isNotepadOpened = store(state => state.notepadContext)
 
   return (
     <>
-      {showMenu && <Menu />}
-      {showWifiBtMenu && <WifiBluetoothMenu />}
+      {isMenuOpened && <Menu />}
+      {isWifiBtMenuOpened && <WifiBluetoothMenu />}
       <div className="w-screen overflow-hidden backdrop-blur-md h-10 absolute bottom-0 flex justify-center items-center space-x-5">
         <img
           src="/icons/w11.svg"
@@ -44,9 +41,10 @@ const Taskbar = (props) => {
             src="/icons/settings.svg"
             className=""
             alt=""
-            onClick={props.openSettings}
+            onClick={store(state => state.changeSettingsContext)}
           />
-          {props.showSettings && <div className="mx-auto mt-[2px] w-[80%] bg-[#4cc2ff] h-[4px] rounded-sm"></div>}
+
+          {isSettingsOpened && <div className="mx-auto mt-[2px] w-[80%] bg-[#4cc2ff] h-[4px] rounded-sm"></div>}
         </div>
         <div className="w-10 h-10 p-2 rounded-sm cursor-pointer hover:bg-[#ffffff28]"
         >
@@ -54,9 +52,9 @@ const Taskbar = (props) => {
             src="/icons/google-chrome.svg"
             className=""
             alt=""
-            onClick={props.openChrome}
+            onClick={store(state => state.changeChromeContext)}
           />
-          {props.showChrome && <div className="mx-auto mt-[2px] w-[80%] bg-[#4cc2ff] h-[4px] rounded-sm"></div>}
+          {isChromeOpened && <div className="mx-auto mt-[2px] w-[80%] bg-[#4cc2ff] h-[4px] rounded-sm"></div>}
         </div>
         <div className="w-10 h-10 p-2 rounded-sm cursor-pointer hover:bg-[#ffffff28]">
           <img
@@ -71,9 +69,9 @@ const Taskbar = (props) => {
             src="/icons/notepad.svg"
             className=""
             alt=""
-            onClick={props.openNotepad}
+            onClick={store(state => state.changeNotepadContext)}
           />
-          {props.showNotepad && <div className="mx-auto mt-[2px] w-[80%] bg-[#4cc2ff] h-[4px] rounded-sm"></div>}
+          {isNotepadOpened && <div className="mx-auto mt-[2px] w-[80%] bg-[#4cc2ff] h-[4px] rounded-sm"></div>}
         </div>
         <div className="w-10 h-10 p-2 rounded-sm cursor-pointer hover:bg-[#ffffff28]">
           <img
