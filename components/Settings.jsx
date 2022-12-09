@@ -123,7 +123,7 @@ const Settings = () => {
                 </div>
               </div>
               <div className="w-full h-[70%] space-y-2 pr-6 pl-2">
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                <div className="w-full min-h-[60px] h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
                   <AiOutlineRight className="absolute right-4" />
                   <BsLaptop className="absolute left-4" />
                   <div className="mx-14 text-sm">
@@ -131,36 +131,36 @@ const Settings = () => {
                     <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
                   </div>
                 </div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                <div className="w-full min-h-[60px] h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
                   <AiOutlineRight className="absolute right-4" />
                   <BsVolumeUp className="absolute left-4" />
                   <div className="mx-14 text-sm">
                     <p className="font-semibold">Sound</p>
-                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                    <p className="text-gray-200">volume levels, output, input, sound devices</p>
                   </div>
                 </div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                <div className="w-full min-h-[60px] h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
                   <AiOutlineRight className="absolute right-4" />
                   <BsBell className="absolute left-4" />
                   <div className="mx-14 text-sm">
                     <p className="font-semibold">Notifications</p>
-                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                    <p className="text-gray-200">Aler from apps and system</p>
                   </div>
                 </div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                <div className="w-full min-h-[60px] h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
                   <AiOutlineRight className="absolute right-4" />
                   <BsMoon className="absolute left-4" />
                   <div className="mx-14 text-sm">
                     <p className="font-semibold">Focus assist</p>
-                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                    <p className="text-gray-200">Notifications, automatic rules</p>
                   </div>
                 </div>
-                <div className="w-full h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
+                <div className="w-full min-h-[60px] h-[18%] bg-[#272a3d] hover:bg-[#393a49] rounded relative flex items-center">
                   <AiOutlineRight className="absolute right-4" />
                   <BsPower className="absolute left-4" />
                   <div className="mx-14 text-sm">
                     <p className="font-semibold">Power & battery</p>
-                    <p className="text-gray-200">Monitors, brightness, night light, display profile</p>
+                    <p className="text-gray-200">Sleep, battery usage, battery saver</p>
                   </div>
                 </div>
               </div>
